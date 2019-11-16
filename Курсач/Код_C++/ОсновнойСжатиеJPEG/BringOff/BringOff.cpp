@@ -141,7 +141,7 @@ int main(int argc, char* argv[])
 	}
 
 	// определение размера отступа в конце каждой строки
-	//пока будет для 32 и 24 битов с остальными может не работать 
+	//пока будет для 32 и 24 битов с остальными может не работать
 	int linePadding;
 	if (fileInfoHeader.biBitCount == 24)
 	{
@@ -149,7 +149,7 @@ int main(int argc, char* argv[])
 	}
 	else if (fileInfoHeader.biBitCount == 32)
 	{
-		linePadding = 0;// 00 байта как в 24 б. в. нет ибо альфа канал 
+		linePadding = 0;// 00 байта как в 24 б. в. нет ибо альфа канал
 	}
 
 
@@ -169,6 +169,8 @@ int main(int argc, char* argv[])
 		}
 		fileStream.seekg(linePadding, std::ios_base::cur);
 	}
+
+
 
 	// вывод
 	/*for (unsigned int i = 0; i < fileInfoHeader.biHeight; i++) {
@@ -239,7 +241,7 @@ int main(int argc, char* argv[])
 	}
 
 	int Red, Green, Blue;;;;;;;;;;;;;;;;
-	char Byte1;// чар это целый байт 
+	char Byte1;// чар это целый байт
 	int EndLine24bit = 0;
 
 	if (fileInfoHeader.biBitCount == 24) // цикл записи в 24
@@ -314,7 +316,7 @@ unsigned char bitextract(const unsigned int byte, const unsigned int mask) {
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
 
-// Советы по началу работы 
+// Советы по началу работы
 //   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
 //   2. В окне Team Explorer можно подключиться к системе управления версиями.
 //   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
