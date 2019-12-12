@@ -8,6 +8,9 @@
 
 using namespace std;
 
+//CXimageStart!12.12.19
+
+
 
 
 int main(int argc, char* argv[])
@@ -239,6 +242,7 @@ int main(int argc, char* argv[])
 		write(fileStreamo, fileInfoHeader.biReserved, sizeof(fileInfoHeader.biReserved));
 		/* дописать еще 3 группы по 4 байта paintnet сохраняет 32 битные картинки странно*/
 	}
+
 
 	int Red, Green, Blue;;;;;;;;;;;;;;;;
 	char Byte1;// чар это целый байт
