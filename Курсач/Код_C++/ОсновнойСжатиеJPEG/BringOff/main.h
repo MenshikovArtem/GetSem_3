@@ -69,6 +69,7 @@ void read(std::ifstream& fp, Type& result, std::size_t size) {
 	fp.read(reinterpret_cast<char*>(&result), size);
 }
 
+// write bytes
 template <typename Type>
 void write(std::ofstream& fp, Type& result, std::size_t size) {
 	fp.write(reinterpret_cast<char*>(&result), size);
